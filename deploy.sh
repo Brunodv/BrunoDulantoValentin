@@ -11,6 +11,6 @@ git add -A
 git commit -m 'deploy'
 
 
-git push -f git@github.com:Brunodv/Bruno.git main:gh-pages
+git push -f git@github.com:Brunodv/BrunoDulantoValentin.git main:gh-pages
 
 cd .    

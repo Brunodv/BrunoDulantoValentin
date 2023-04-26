@@ -17,7 +17,7 @@ function Home() {
         <h1 className='twH1'>BRUNO DULANTO VALENTIN</h1>
       </div>
       <div className="buttons">
-        <button className='b1'><a className='link' href="https://drive.google.com/file/d/1HMd9-v6yl9Yt3-jHfsiIESbENGiYex83/view?usp=share_link"> Descargar CV</a></button>
+        <button className='b1'><a className='link' href="https://drive.google.com/file/d/1DEy5QdhG059wOWUjSMbgvibngxxiL7VW/view?usp=share_link"> Descargar CV</a></button>
          <button className='b1'><a className='link' href="mailto:xcdrxcdr@gmail.com?subject=Queremos%20trabajar%20contigo!&body=Hola%2C%20quisiera%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios">Escríbeme</a></button>
       </div>
       
