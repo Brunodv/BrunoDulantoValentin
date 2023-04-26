@@ -1,0 +1,108 @@
+
+.proyecto{
+    position: relative;
+    width: 100%;
+    transition: all .3s ease;
+}
+
+.proyecto img:first-child{
+    box-shadow: 0  60px 60px 
+    -60px rgba(0,30,255,0.5);
+    border-radius: 20px;
+    object-fit: cover;
+    width: 100%; 
+}
+
+.proyecto img:last-child{
+    position: absolute;
+    width:70%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(25%);
+    transition: .3s ease;
+    opacity: 0;
+
+}
+
+.proyecto:hover{
+    transform: 
+    perspective(250px)
+    rotateX(10deg)
+    translateY(-5%)
+    translateZ(0);
+
+}
+.proyecto::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-image: 
+    linear-gradient(
+        to bottom,
+        transparent 10%,
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(0, 0, 0) 95%
+    );
+    opacity: 0;
+    transition: all .3s ease;
+
+    border-radius: 20px;
+
+}
+
+.proyecto:hover::before{
+    opacity: 1;
+}
+.proyecto:hover img:last-child{
+    opacity: 1;
+    transform: translateY(10%);
+    cursor: pointer;
+}
+
+.descriptionLink{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    text-align: left;
+}
+.description{
+    top: 0 auto;
+}
+
+.descriptionLink a{
+    margin: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.card{
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(3,fr);
+}
+.proyectLink{
+    background-color: var(--color31);
+    border-radius: 10px;
+    height: 2rem;
+    font-size: 1.3rem;
+    text-align: center;   
+    align-self: end;
+    bottom: 0;
+}
+
+.proyectLink:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+@media (max-width:270px){
+    .descriptionLink {
+        font-size: 1rem;
+
+    }
+}

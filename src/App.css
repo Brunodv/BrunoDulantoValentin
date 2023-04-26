@@ -1,0 +1,121 @@
+
+:root{
+  --color1: #FFFFFF;
+  --color2: #F1F3F1;
+  --color3: #F4F4CE;
+  --color4: #55201A;
+  --color5: #D63621;
+  --color6: #F27E55;
+  --color7: #B889A3;
+
+  --color8: #BD4329;
+  --color9: #FF7A75;
+  --color10: #D96852;
+  --color11: #F9BBA4;
+  --color12: #F3C2CC;
+  --color13: #52353A;
+  --color14: #927186;
+  --color15: #BE9FAC;
+  --color16: #FFD5E9;
+  --color17: #FCF8FF;
+  --color18: #DDDEE8;
+  --color19: #FFF2FF;
+  --color20: #FFEFEB;
+  --color21: #E7DCCD;
+  --color22: #8078AB;
+  --color23: #837BAC;
+  --color24: #8CA8D1;
+  --color25: #8CAAD2;
+  --color26: #7393A1;
+  --color27: #CE767C;
+  --color28: #E79CA3;
+  --color29: #FFF3A5;
+  --color30: #E1E19A;
+  --color31: #C3FEC6;
+  --color32: #E5DCCD;
+  --color33: #72D8EB;
+  --color34: #2D2938;
+  --color35: #090700;
+  --color36: #F5E5D8;
+  --color37: #F7DAB2;
+  --color38: #EDEBD6;
+  --color39: #DDDEE8;
+  --color40: #F2CADB;
+  --color41: #D3FFD1;
+  --color42: #A2FDC2;
+  --color43: #94F2F2;
+  --color44: #57515C;
+  --color45: #02155B;
+  --color46: #5767f2;
+  --color47: #5669E9;
+  --color48: #5468B6;
+  --color49: #3D6CF7;
+  --color50: #306CD3;
+  --color51: #1352C4;
+  --color52: #50A4FF;
+  --color53: #28A2F0;
+  --color54: #1582D5;
+  --color55: #6382F8;
+  --color56: #6483F8;
+  --color57: #7B87FF;
+  --color58: #8A83D0;
+  --color59: #9389CF;
+  --color60: #DE9FFF;
+  --color61: #CE93D8;
+  --color62: #C043FE;
+
+  --color63: #94F2F2;
+  --color64: #50A4FF;
+  --color65: #7B87FF;
+  --color66: #DE9FFF;
+  --color67: #CE93D8;
+  
+
+  --color70: #04360E;
+  --color71: #045B22;
+  --color72: #82F95D;
+  --color73: #54C92D;
+  --color74: #00DD88;
+  --color75: #02EC96;
+  --color76: #7AB1B3;
+  --color77: #1E81AB;
+  --color78: #014358;
+  --color79: #133762;
+  --color80: #012051;
+  --color81: #000633;
+  --color82: #DBA076;
+  --color83: #3F2713;
+  --color84: #A09580;
+  --color85: #3A321E;
+  --color86: #4A3B36;
+  --color87: #131103;
+  --color88: #FEF800;
+  --color89: #366325;
+  --color90: #1B3141;
+  --color91: #197576;
+  --color92: #286D70;
+  --color93: #386427;
+  --color94: #1A2E3F;
+  
+  --color95: #02EAFF;
+  --color96: #2ACEFB;
+  --color97: #535CB3;
+
+  font-family: "Bruno";
+}
+
+body{
+  text-align: center;
+}
+
+.bruno{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 5rem;
+}
+
+button:hover{
+  transform: scale(1.2);
+}
+

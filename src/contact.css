@@ -1,0 +1,36 @@
+.columnsContact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    background: var(--color97);
+}
+.rows{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    
+}
+.contactoTitle{
+    font-size: 1.7rem;
+    color: var(--color1);
+}
+.Bruno{
+    font-size: 1.3rem;
+    color: var(--color1);
+
+}
+
+@media(max-width:420px){
+    .columnsContact{
+        height: 200px;
+    }
+    .rows{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+}

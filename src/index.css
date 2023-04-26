@@ -1,0 +1,21 @@
+
+
+:root {
+
+  line-height: 1.5;
+
+  color-scheme: light dark; 
+  background-image: linear-gradient(to right, var(--color97), var(--color64)); 
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+@font-face {
+  font-family: "Bruno";
+  src: url("./fonts/ShareTechMono-Regular.ttf");
+}
