@@ -7,11 +7,11 @@
 }
 
 .proyectsGrid{
-  width: 50%;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, minmax(35%, 1fr)); /* 3 columnas de igual tamaño */
+  grid-template-columns: repeat(1, minmax(35%, 1fr)); /* 3 columnas de igual tamaño */
   grid-template-rows: repeat(1, 1fr); /* 3 filas de igual tamaño */
-  grid-gap: 30px;
+  grid-gap: 3rem;
   /* espacio entre cada elemento */
   margin: 0 auto;
 }
@@ -26,29 +26,26 @@
   padding: 50px;
 }
 
-@media(max-width:1250px){
-  .proyectsGrid{
-    width: 70%;
-  }
-
+.card{
+  width: 90%;
+  color: var(--color1);   
+  padding: 30px;
 }
-@media(max-width:1200px){
-  .proyectsGrid{
-    width: 70%;
-  }
 
-}
 @media(max-width:650px){
-  .proyectsTitle{
-    font-size: 2.3rem;
+  #proyectsTitle{
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 0;
   }
   .proyectsGrid{
-    width: 70%;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* 3 columnas de igual tamaño */
+    width: 100%;
+    grid-template-columns: repeat(1, minmax(140px, 1fr)); /* 3 columnas de igual tamaño */
     grid-template-rows: repeat(1, 1fr); 
   }
   .card{
     width: 90%;
+    padding: 30px;
   }
   .proyects{
     height: auto;
@@ -62,19 +59,21 @@
   .ingTitle{
     font-size: 1.5rem;
   }
+  .card{
+    gap: 1rem;
+}
 }
 @media(max-width:250px){
-  
-  .proyectsGrid{
-    width: 70%;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* 3 columnas de igual tamaño */
-    grid-template-rows: repeat(1, 1fr); 
-  }
-  .card{
-    width: 90%;
-  }
+
   .proyects{
     height: auto;
   }
 
+  #ingTitle{
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  .description{
+    text-align: center;
+  }
 }

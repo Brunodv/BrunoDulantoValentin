@@ -16,7 +16,7 @@ function Contact(){
         </div>
         </div>
         <div className="rows">
-            <h1 className="Bruno">Copyright &copy; {new Date().getFullYear()} | Bruno Dulanto Valentin </h1> 
+            <h1 className="Bruno"> Bruno Dulanto Valentin </h1> 
         </div>
         </div>
     </div>

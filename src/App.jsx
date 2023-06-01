@@ -6,11 +6,13 @@ import Proyects from './Proyects';
 import Ingenieria from './Ingenieria';
 import Documentos from './Documentos';
 import Contact from './Contact';
+import Burguer from './Burguer';
 
 function App(){
   
   return (
     <div className="App">
+      <Burguer />
       <div className="bruno">
       <Home />
       <About />

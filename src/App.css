@@ -109,12 +109,19 @@ body{
 }
 
 .bruno{
+  width: 83%;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   gap: 5rem;
+  float: right;
+
 }
 
+@media (max-width:800px){
+  .bruno{
+    width: 100%;
+  }
+}
 button:hover{
   transform: scale(1.2);
 }

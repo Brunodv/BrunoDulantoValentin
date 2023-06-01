@@ -1,47 +1,59 @@
 .Burguer{
     display: none;
 }
-.asideDescription{
-  display: none;
 
-}
 a{
     text-decoration: none;
   }
-aside{
+  .menu{
     position: fixed;
     height: 100vh;
-    left: 3rem;
+    width: 17%;
     display: flex;
     justify-content: center;
+    background-color: var(--color97);
+    z-index: 20;
+    
   }
   
-  ul{
+  .nav{
     list-style: none;
     display: flex;
     flex-direction: column; /* establece la dirección de la columna */
     justify-content: center; /* centra verticalmente */
-    align-items: left; /* centra horizontalmente */
     margin: 0 auto;
     padding: 0;
     height: 100vh;
     color: var(--color33);
+    gap: 20px;
   }
-  
-  
+
+
+.isActive{
+  color: var(--color29);
+}
+
   
   
   ul.nav.show {
     right: 0; /* muestra la lista */
   }
   
-  ul.nav li {
-    padding-left:30px;
+  ul.nav li{
     margin: 10px 0;
+    display: flex;
+    font-size: 0.9rem;
+    align-items: center;
+    cursor: pointer;
   }
   
   ul.nav li img {
     cursor: pointer;
+  }
+  
+  .menuIcon{
+    width: 3rem;
+    padding-right: 14px;
   }
   
 
@@ -53,40 +65,8 @@ aside{
     padding: 0.8rem;
     animation: rotate-left 10s linear infinite; 
   }
-
-  li:hover .rotateRight  {
-    cursor: pointer;
-    animation-play-state: paused;
-    animation: rotate-left 1s linear forwards, rotate-right 4s linear forwards;
-    animation-direction: alternate;
-  }
   
-  li:hover .rotateLeft {
-    cursor: pointer;
-    animation-play-state: paused;
-    animation: rotate-right 1s linear forwards, rotate-left 4s linear forwards;
-    animation-direction: alternate;
-  }
-  
-  @keyframes rotate-right {
-    from {
-      transform: rotateY(0deg);
-    }
-    to {
-      transform: rotateY(360deg);
-    }
-  }
-  @keyframes rotate-left {
-    from {
-      transform: rotateY(360deg);
-    }
-    to {
-      transform: rotateY(0deg);
-    }
-  }
-  
-
-
+/*
 @media (max-width: 350px){
   
     .typewriter {
@@ -101,16 +81,40 @@ aside{
   
   
   }
-  
+  */
+
 @media (max-width:1100px){
-  ul.nav {
+
+    .menu{
+      width: 13%;
+    }
+    .asideDescription{
+      display: none;
+    }
+    .menuIcon{
+      width: 4rem;
+    }
+}
+
+@media (max-width:800px){
+  
+  .asideDescription{
+    display: contents;
+  }
+
+  .menu{
+    width: 0%;
+  }
+  
+  .nav {
     position: fixed;
     top: 0px;
+    align-items: center;
     width: 100%;
     right: -100%; 
+    z-index: -1;
     list-style: none;
     background-color: var(--color97);
-    z-index: -1;
     transition: right 0.3s ease-in-out;
   }
 
@@ -120,25 +124,11 @@ aside{
     position: fixed;
     cursor: pointer;
     right: 0;
-    top: 0;display: flex;
+    top: 0;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
-
-aside{
-  z-index: 10;
-}
-
-.asideDescription{
-  display: contents;
-}
-.imgDescription{
-  display: flex;
-  align-items: center;
-
-
-}
-
 
 }
 

@@ -7,6 +7,10 @@ import mario2 from './img/mario2.png'
 import ansys from './img/ansys.png'
 import cfd from './img/cfd.png'
 import manto from './img/manto.jpg'
+import bootstrap from './img/bootstrap.png'
+import node from './img/node.png'
+import js from './img/js.png'
+
 function Ingenieria(){
     return( 
         <div className="proyects">
@@ -14,6 +18,9 @@ function Ingenieria(){
         <div className="proyectsGrid">
         <Proyecto img={ansys} img2={cfd}
         description="Breve recopilación de física aplicada, analisís de estructuras por elementos finitos y Dinámica de fluidos computacionales"
+        technologysImg={js}
+        technologysImg2={node}
+        technologysImg3={bootstrap} 
         link="https://brunodv.github.io/Ansys/" linkName="ver"/> 
         <Proyecto img={manto} img2=''
         description="Mi propio CAD web (Aún en proceso)"

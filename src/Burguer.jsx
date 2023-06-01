@@ -12,6 +12,7 @@ import close from './img/close.png'
 
 function Burguer() {
   const [showNav, setShowNav] = useState(false); // Estado para mostrar/ocultar la barra de navegación
+  const [activeSection, setActiveSection] = useState('home'); // Estado para controlar la sección activa
 
   const toggleNav = () => {
     setShowNav(!showNav);
@@ -20,21 +21,24 @@ function Burguer() {
   const handleClick = (section) => {
     const element = document.getElementById(section);
     element.scrollIntoView({ behavior: 'smooth' });
-
-    setShowNav(false); // Oculta la barra de navegación después de hacer clic en un elemento de la lista
+    setShowNav(false); //Oculta la barra de navegación después de hacer clic en un elemento de la lista
+    setActiveSection(section); 
   };
+
+ 
     
     return( 
       <> 
-        <aside>
-        <div className='Burguer' onClick={toggleNav}><img  src={showNav ? close : burguer} alt="" /></div>
+        <aside className='menu'>
+        <div className='Burguer' onClick={toggleNav}><img  src={showNav ? close : burguer} alt="" /></div> 
         <ul className={`nav ${showNav ? 'show' : ''}`}>
-        <li onClick={()=>handleClick('home')}><div className="imgDescription"><img className="rotateRight" src={home} alt="" /><h2 className='asideDescription'>Inicio</h2></div></li>
-          <li onClick={()=>handleClick('about')}><div className="imgDescription"><img className="rotateLeft" src={skills} alt="" /><h2 className='asideDescription'>Skills</h2></div></li>
-          <li onClick={()=>handleClick('proyectsTitle')}><div className="imgDescription"><img className="rotateRight" src={proyectos} alt="" /><h2 className='asideDescription'>Proyectos</h2></div></li>
-          <li onClick={()=>handleClick('ingTitle')}><div className="imgDescription"><img className="rotateLeft" src={ingenieria} alt="" /><h2 className='asideDescription'> Aeronáutica</h2></div></li>
-          <li onClick={()=>handleClick('documentosTitle')}><div className="imgDescription"><img className="rotateRight" src={documentos} alt="" /><h2 className='asideDescription'>Documentos</h2></div></li>
-          <li onClick={()=>handleClick('contactoContainer')}><div className="imgDescription"><img className="rotateLeft" src={contacto} alt="" /><h2 className='asideDescription'>Contácto</h2></div></li>
+        <li className={activeSection === 'home' ? 'isActive' : ''} onClick={()=>handleClick('home')}><img className="menuIcon" src={home} alt="" /><h2 className='asideDescription'>Inicio</h2></li>
+          <li className={activeSection === 'about' ? 'isActive' : ''} onClick={()=>handleClick('about')}><img className="menuIcon" src={me} alt="" /><h2 className='asideDescription'>Sobre Mi</h2></li>
+          <li className={activeSection === 'about' ? 'isActive' : ''} onClick={()=>handleClick('h1Skills')}><img className="menuIcon" src={skills} alt="" /><h2 className='asideDescription'>Skills</h2></li>
+          <li className={activeSection === 'proyectsTitle' ? 'isActive' : ''} onClick={()=>handleClick('proyectsTitle')}><img className="menuIcon" src={proyectos } alt="" /><h2 className='asideDescription'>Proyectos</h2></li>
+          <li className={activeSection === 'ingTitle' ? 'isActive' : ''} onClick={()=>handleClick('ingTitle')}><img className="menuIcon" src={ingenieria } alt="" /><h2 className='asideDescription'> Aeronáutica</h2></li>
+          <li className={activeSection === 'documentosTitle' ? 'isActive' : ''} onClick={()=>handleClick('documentosTitle')}><img className="menuIcon" src={documentos } alt="" /><h2 className='asideDescription'>Documentos</h2></li>
+          <li className={activeSection === 'contactoContainer' ? 'isActive' : ''} onClick={()=>handleClick('contactoContainer')}><img className="menuIcon" src={contacto } alt="" /><h2 className='asideDescription'>Contácto</h2></li>
           </ul>
         </aside>
       </>
