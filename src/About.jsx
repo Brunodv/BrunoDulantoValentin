@@ -31,7 +31,7 @@ function About(){
         <div className="actitudes">
         <p>-Desarrollo de Software <Emoji text="😍" /> <br />
         -Ingeniería Aeronáutica <Emoji text="👨‍🎓" /><br />
-        -Data Analytics <Emoji text="📊" /><br />
+        -Análisis de Datos<Emoji text="📊" /><br />
         -Física y Matemáticas <Emoji text="📚" /><Emoji text="👩‍💻" /><br />
         -Desarrollo personal <Emoji text="🧠💪" /><br />
         </p>

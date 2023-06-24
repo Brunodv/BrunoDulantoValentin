@@ -25,13 +25,13 @@ function Proyects(){
         <h1 id="proyectsTitle">Proyectos</h1>
         <div className="proyectsGrid">
         <Proyecto img={rickyMorty1} img2={rickyMorty2}
-        description="Una práctica de fetch, Lista los personajes de la serie animada Rick y Morty con el stack:"
+        description="Una práctica de fetch, Lista los personajes de la serie animada desde la API de Rick y Morty con el stack:"
         link="https://brunodv.github.io/Rick-Morty/"  technologysImg={js}  technologysImg2={node}  technologysImg3={react} /> 
         <Proyecto img={euler1} img2={euler2} technologysImg={html} technologysImg2={css} technologysImg3={js}
         description="Web para practicar Jquery, mostrando los ángulos de movimiento de una Aeronave"
         link="https://brunodv.github.io/AutomaticaYControlDeAeronaves/" />
         <Proyecto img={gpt1} img2={gpt2} technologysImg={js} technologysImg2={node} technologysImg3={react}
-        description="Implementación de la Api de OpenAI con chat-gpt 3.5, un servidor node y UI React "
+        description="Implementación de la API de OpenAI con chat-gpt 3.5, un servidor node y UI React "
         link="https://brunodv.github.io/RoyGPT/" />
         <Proyecto img={pelisPako} img2='' technologysImg={html} technologysImg2={css} technologysImg3={js}
         description="Clon de Netflix, practica de Front-end básico con html css y js"
