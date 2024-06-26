@@ -5,7 +5,7 @@ import './documentos.css';
 function Documentos(){
     return(
         <div className="documentos">
-            <div id='documentosTitle'><h1>Documentos</h1><a className="cv" href="https://drive.google.com/file/d/1DEy5QdhG059wOWUjSMbgvibngxxiL7VW/view?usp=share_link"> ver CV en PDF</a></div>
+            <div id='documentosTitle'><h1>Documentos</h1><a className="cv" href="https://drive.google.com/file/d/1s-Ygb4vpTgB4o7LIAa_aKbA5YSbBTSLb/view?usp=sharing"> ver CV en PDF</a></div>
             <div className="docsColumns">
              <div className='documento'><h1 className="title">BACHILLER EN INGENIERÍA AERONÁUTICA - UNIVERSIDDAD TECNOLÓGICA DEL PERÚ</h1> <a className='b3' href='https://drive.google.com/file/d/1LeNOX9aUEzOb0i45hJiKgnOpyxWclrtu/view?usp=share_link'>descargar</a></div>
              <div className='documento'><h1 className="title">DESARROLLO WEB I - 40 HRS. GOOGLE ACTIVATE</h1> <a className='b3' href='https://drive.google.com/file/d/1Vg-mW5V4kPxXy-67a7fy9iDIGmXsgKwG/view?usp=share_link'>descargar</a> </div>
