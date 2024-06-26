@@ -1,5 +1,4 @@
-
-:root{
+:root {
   --color1: #FFFFFF;
   --color2: #F1F3F1;
   --color3: #F4F4CE;
@@ -69,7 +68,7 @@
   --color65: #7B87FF;
   --color66: #DE9FFF;
   --color67: #CE93D8;
-  
+
 
   --color70: #04360E;
   --color71: #045B22;
@@ -96,7 +95,7 @@
   --color92: #286D70;
   --color93: #386427;
   --color94: #1A2E3F;
-  
+
   --color95: #02EAFF;
   --color96: #2ACEFB;
   --color97: #535CB3;
@@ -104,11 +103,11 @@
   font-family: "Bruno";
 }
 
-body{
+body {
   text-align: center;
 }
 
-.bruno{
+.bruno {
   width: 83%;
   display: flex;
   flex-direction: column;
@@ -117,12 +116,12 @@ body{
 
 }
 
-@media (max-width:800px){
-  .bruno{
+@media (max-width:800px) {
+  .bruno {
     width: 100%;
   }
 }
-button:hover{
+
+button:hover {
   transform: scale(1.2);
 }
-
