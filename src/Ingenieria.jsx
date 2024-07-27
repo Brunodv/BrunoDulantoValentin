@@ -2,7 +2,7 @@ import './App.css'
 import Proyecto from './Proyecto';
 import './proyects.css'
 
-import bruno from './img/bruno.jpg'
+import bruno from './img/bruno.png'
 import mario2 from './img/mario2.png'
 import ansys from './img/ansys.png'
 import cfd from './img/cfd.png'

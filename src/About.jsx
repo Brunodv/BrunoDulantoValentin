@@ -2,7 +2,7 @@ import './App.css'
 import './about.css'
 
 import Emoji from 'react-emoji-render';
-import bruno from './img/bruno.jpg';
+import bruno from './img/bruno.png';
 import Carousel from './Carousel';
 import js from './img/js.png';
 import react from './img/react.png';
