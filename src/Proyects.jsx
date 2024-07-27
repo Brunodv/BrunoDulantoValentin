@@ -18,30 +18,33 @@ import css from './img/css.png'
 import mongodb from './img/mongodb.png'
 import express from './img/express.png'
 import three from './img/three.png'
-
-function Proyects(){
-    return( 
+import bypanda from './img/bypanda.png'
+import firebase from './img/firebase.png'
+import cloudinary from './img/cloudinary.png'
+function Proyects() {
+    return (
         <div className="proyects">
-        <h1 id="proyectsTitle">Proyectos</h1>
-        <div className="proyectsGrid">
-        <Proyecto img={rickyMorty1} img2={rickyMorty2}
-        description="Una práctica de fetch, Lista los personajes de la serie animada desde la API de Rick y Morty con el stack:"
-        link="https://brunodv.github.io/Rick-Morty/"  technologysImg={js}  technologysImg2={node}  technologysImg3={react} /> 
-        <Proyecto img={euler1} img2={euler2} technologysImg={html} technologysImg2={css} technologysImg3={js}
-        description="Web para practicar Jquery, mostrando los ángulos de movimiento de una Aeronave"
-        link="https://brunodv.github.io/AutomaticaYControlDeAeronaves/" />
-        <Proyecto img={gpt1} img2={gpt2} technologysImg={js} technologysImg2={node} technologysImg3={react}
-        description="Implementación de la API de OpenAI con chat-gpt 3.5, un servidor node y UI React "
-        link="https://brunodv.github.io/RoyGPT/" />
-        <Proyecto img={pelisPako} img2='' technologysImg={html} technologysImg2={css} technologysImg3={js}
-        description="Clon de Netflix, practica de Front-end básico con html css y js"
-        link="https://brunodv.github.io/Practicando-JS-sin-framework/" />
-        <Proyecto img={ecommerce} img2=""  technologysImg={mongodb} technologysImg2={express} technologysImg3={react} technologysImg4={node}
-        description="E-Commerce Full stack, Back End node.js con express, base de datos MongoDB y Front End React (MERN Stack)" 
-        link="https://brunodv.github.io/NotFound/" />
-        </div></div>
+            <h1 id="proyectsTitle">Proyectos</h1>
+            <div className="proyectsGrid">
+                <Proyecto img={bypanda} img2="" technologysImg={react} technologysImg2={firebase} technologysImg3={cloudinary}
+                    description="E-commerce con React.js y Firebase, inicio de sesión con cuenta de google, pandel de administrador para gestión de productos y ordenes, carrito de compras, pagos por yape, soporta 50000 vistas diarias y subida de 1000 productos con imagenes en cloudinary sin costo alguno."
+                    link="https://tity-store.web.app" />
+                <Proyecto img={rickyMorty1} img2={rickyMorty2}
+                    description="Una práctica de fetch, Lista los personajes de la serie animada desde la API de Rick y Morty con el stack:"
+                    link="https://brunodv.github.io/Rick-Morty/" technologysImg={js} technologysImg2={node} technologysImg3={react} />
+                <Proyecto img={euler1} img2={euler2} technologysImg={html} technologysImg2={css} technologysImg3={js}
+                    description="Web para practicar Jquery, mostrando los ángulos de movimiento de una Aeronave"
+                    link="https://brunodv.github.io/AutomaticaYControlDeAeronaves/" />
+                <Proyecto img={gpt1} img2={gpt2} technologysImg={js} technologysImg2={node} technologysImg3={react}
+                    description="Implementación de la API de OpenAI con chat-gpt 3.5, un servidor node y UI React "
+                    link="https://brunodv.github.io/RoyGPT/" />
+                <Proyecto img={pelisPako} img2='' technologysImg={html} technologysImg2={css} technologysImg3={js}
+                    description="Clon de Netflix, practica de Front-end básico con html css y js"
+                    link="https://brunodv.github.io/Practicando-JS-sin-framework/" />
+
+            </div></div>
     )
-    
+
 }
 
 export default Proyects;
