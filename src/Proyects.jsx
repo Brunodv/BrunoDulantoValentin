@@ -27,7 +27,7 @@ function Proyects() {
             <h1 id="proyectsTitle">Proyectos</h1>
             <div className="proyectsGrid">
                 <Proyecto img={bypanda} img2="" technologysImg={react} technologysImg2={firebase} technologysImg3={cloudinary}
-                    description="E-commerce con React.js y Firebase, inicio de sesión con cuenta de google, pandel de administrador para gestión de productos y ordenes, carrito de compras, pagos por yape, soporta 50000 vistas diarias y subida de 1000 productos con imagenes en cloudinary sin costo alguno."
+                    description="E-commerce con React.js y Firebase, inicio de sesión con cuenta de google, panel de administrador para gestión de productos y ordenes, carrito de compras, pagos por yape."
                     link="https://tity-store.web.app" />
                 <Proyecto img={rickyMorty1} img2={rickyMorty2}
                     description="Una práctica de fetch, Lista los personajes de la serie animada desde la API de Rick y Morty con el stack:"
